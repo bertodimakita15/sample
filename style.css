@@ -1,0 +1,400 @@
+/* 18-8-2021 Ankita */
+video::-internal-media-controls-download-button { 
+    display:none; 
+} 
+ .videoWrapOne:hover .more-text1{
+bottom: 0;
+}
+.videoWrapOne:hover .video_back_img {
+opacity: 30%;
+}
+
+ .videoWrapTwo:hover .more-text2{
+bottom: 0;
+}
+.videoWrapTwo:hover .video_back_img {
+opacity: 30%;
+}
+
+ .videoWrapThree:hover .more-text3{
+bottom: 0;
+}
+.videoWrapThree:hover .video_back_img {
+opacity: 30%;
+}
+
+
+
+.more-text1{
+	  position: absolute;
+            bottom:-100%;
+			
+            left:0;
+            width:100%;
+            height:100%;
+            background-color: #ffb82bab;
+            padding: 30px;
+            overflow-y:auto;
+            transition: all ease 0.7s;
+}
+.more-text1 p{
+padding-top: 90px;
+font-weight: 900;
+font-size: 23px;
+color: darkslategray;
+text-align: center;
+}
+
+.more-text2{
+	  position: absolute;
+            bottom:-100%;
+			
+            left:0;
+            width:100%;
+            height:100%;
+            background-color: #bb7c4199;
+            padding: 30px;
+            overflow-y:auto;
+            transition: all ease 0.7s;
+}
+.more-text2 p{
+padding-top: 90px;
+font-weight: 900;
+font-size: 23px;
+color: darkslategray;
+text-align: center;
+}
+
+.more-text3{
+	  position: absolute;
+            bottom:-100%;
+			
+            left:0;
+            width:100%;
+            height:100%;
+            background-color: #48bfbd8c;
+            padding: 30px;
+            overflow-y:auto;
+            transition: all ease 0.7s;
+}
+.more-text3 p{
+padding-top: 90px;
+font-weight: 900;
+font-size: 23px;
+color: darkslategray;
+text-align: center;
+}
+/* .forHover{
+	bottom: -75%;
+} */
+.form_sec img {
+/*   padding: 50px; */
+/*   background-color: green; */
+  transition: transform .2s; /* Animation */
+/*  width: 200px;
+  height: 200px; */
+  margin: 0 auto;
+}
+
+.form_sec img:hover{
+	 -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+video::-webkit-media-controls-enclosure { 
+    overflow:hidden; 
+} 
+ 
+video::-webkit-media-controls-panel { 
+    width: calc(100% + 30px); /* Adjust as needed */ 
+} 
+.side-bar .menu ul li.current-menu-item a {
+    font-size: 3.2rem;
+    opacity: 1;
+    font-weight: bold;
+}
+
+.side-bar .menu ul li.current-menu-item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 1px;
+    background: #fff;
+    opacity: 0.7;
+}
+.videoWrapOne, .videoWrapTwo, .videoWrapThree{
+	overflow:hidden;
+}
+
+
+.videoWrapOne.active, .videoWrapTwo.active, .videoWrapThree.active, .videoWrapFour.active, .videoWrapFive.active, .videoWrapSix.active {
+    box-shadow: 3px 27px 20px -14px rgb(0 0 0 / 34%);
+    -webkit-box-shadow: 3px 27px 20px -14px rgb(0 0 0 / 34%);
+    -moz-box-shadow: 3px 27px 20px -14px rgba(0,0,0,0.34);
+/* 	overflow:hidden; */
+}
+.videoWrapOne.active .video_inner_text {
+    background: #FAAE1B;
+}
+.videoWrapTwo.active .video_inner_text {
+    background: #CB8C52;
+}
+.videoWrapThree.active .video_inner_text {
+    background: rgba(82, 203, 201, 1);
+}
+.videoWrapFour.active .video_inner_text {
+    background: #9679c3;
+}
+.videoWrapFive.active .video_inner_text {
+    background: #0A638F;
+}
+.videoWrapSix.active .video_inner_text {
+    background: #0a8f5f;
+}
+.videoWrapOne.active .video_inner_text::before{
+  content: "";
+  position: absolute;
+ bottom: 100%;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#faae1b+0,faae1b+100&0+13,1+100 */
+  background: -moz-linear-gradient(top,  rgba(250,174,27,0) 0%, rgba(250,174,27,0) 13%, rgba(250,174,27,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(250,174,27,0) 0%,rgba(250,174,27,0) 13%,rgba(250,174,27,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(250,174,27,0) 0%,rgba(250,174,27,0) 13%,rgba(250,174,27,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00faae1b', endColorstr='#faae1b',GradientType=0 ); /* IE6-9 */
+}
+.videoWrapTwo.active .video_inner_text::before{
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#cb8c52+0,cb8c52+100&0+13,1+100 */
+  background: -moz-linear-gradient(top,  rgba(203,140,82,0) 0%, rgba(203,140,82,0) 13%, rgba(203,140,82,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(203,140,82,0) 0%,rgba(203,140,82,0) 13%,rgba(203,140,82,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(203,140,82,0) 0%,rgba(203,140,82,0) 13%,rgba(203,140,82,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00cb8c52', endColorstr='#cb8c52',GradientType=0 ); /* IE6-9 */
+}
+.videoWrapThree.active .video_inner_text::before{
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#52cbc9+0,52cbc9+100&0+13,1+100 */
+  background: -moz-linear-gradient(top,  rgba(82,203,201,0) 0%, rgba(82,203,201,0) 13%, rgba(82,203,201,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(82,203,201,0) 0%,rgba(82,203,201,0) 13%,rgba(82,203,201,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(82,203,201,0) 0%,rgba(82,203,201,0) 13%,rgba(82,203,201,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0052cbc9', endColorstr='#52cbc9',GradientType=0 ); /* IE6-9 */
+}
+.videoWrapFour.active .video_inner_text::before{
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#9679c3+0,9679c3+100&0+13,1+100 */
+  background: -moz-linear-gradient(top,  rgba(150,121,195,0) 0%, rgba(150,121,195,0) 13%, rgba(150,121,195,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(150,121,195,0) 0%,rgba(150,121,195,0) 13%,rgba(150,121,195,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(150,121,195,0) 0%,rgba(150,121,195,0) 13%,rgba(150,121,195,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#009679c3', endColorstr='#9679c3',GradientType=0 ); /* IE6-9 */
+}
+.videoWrapFive.active .video_inner_text::before{
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0a638f+0,0a638f+100&0+13,1+100 */
+  background: -moz-linear-gradient(top,  rgba(10,99,143,0) 0%, rgba(10,99,143,0) 13%, rgba(10,99,143,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(10,99,143,0) 0%,rgba(10,99,143,0) 13%,rgba(10,99,143,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(10,99,143,0) 0%,rgba(10,99,143,0) 13%,rgba(10,99,143,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000a638f', endColorstr='#0a638f',GradientType=0 ); /* IE6-9 */
+}
+.videoWrapSix.active .video_inner_text::before{
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0a8f5f+0,0a8f5f+100&0+13,1+100 */
+  background: -moz-linear-gradient(top,  rgba(10,143,95,0) 0%, rgba(10,143,95,0) 13%, rgba(10,143,95,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(10,143,95,0) 0%,rgba(10,143,95,0) 13%,rgba(10,143,95,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(10,143,95,0) 0%,rgba(10,143,95,0) 13%,rgba(10,143,95,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000a8f5f', endColorstr='#0a8f5f',GradientType=0 ); /* IE6-9 */
+}
+.comm_video.active .video_inner_text h3,.comm_video.active .video_inner_text h4{
+  color: #fff;
+}
+.comm_video.active .video_back_img::before {
+    background: transparent;
+}
+.wpcf7 form .wpcf7-response-output{font-size: 14px;}
+
+.dropdown-menu-social {
+    min-width: 2.8rem;
+    padding: 2px;
+}
+.social-facebook {
+    background-color: #3b5898;
+    color: #fff;
+}
+.social-twitter {
+    background-color: #1ea2f2;
+    color: #fff;
+}
+.social-youtube {
+    background-color: #d30000;
+    color: #fff;
+}
+.btn-group a:after{display:none;}
+
+.commentlist img.avatar, .commentlist .says{display:none; }
+.commentlist .fn, .commentlist .fn a{font-size: 2.6rem;
+    line-height: 30px;
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 5px;
+	font-style: normal;}
+.comment-body p{color: #393939;
+    font-size: 1.6rem;
+    line-height: 3.6rem;
+	margin:15px 0;
+    }	
+.comment-meta a{
+	margin-right: 45px;
+    font-size: 1.5rem;
+    color: #666666;
+	margin-top: 7px;
+	display:block;
+}	
+.reply{margin-bottom: 30px;}
+.reply a{color: #292929;
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-transform: capitalize;
+	}
+.children{
+    margin-left: 60px;}	
+.commentlist ul, ol.commentlist{list-style:none;}
+li.comment.depth-1{margin-bottom:30px;}	
+li.comment.depth-1 .comment-body{
+	border-left: 2px solid #CBCBCB;
+    /*border-bottom: 2px solid #CBCBCB;*/
+    padding: 0 20px 30px 30px;
+    border-bottom-left-radius: 50px;
+    margin-left: 20px;
+    position: relative;
+}
+li.comment.depth-1 .comment-body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -8px;
+    width: 15px;
+    height: 15px;
+    background: #C4C4C4;
+    border-radius: 50%;}
+	
+.children .comment-body{border-left: 0 !important; padding: 0 0 20px 0 !important;}	
+.children .comment-body::before{display:none;}	
+	
+.belive h2{margin-bottom: 20px; padding-bottom:0 !important;}	
+.belive h3.belive-head{margin-bottom: 90px;}
+.form_sec p{color: #595C63;
+    line-height: 36px;
+    font-size: 1.8rem; text-align:center;}
+.form_sec h3{text-align:center;}
+.our-values .innerBx a{min-height: 270px; height:auto;}
+.our-values .tabBoxInnerText.active{bottom: -25px;}
+.our-values .innerBx{min-height: 270px; height:auto;}
+
+.belive_parent{position:relative; padding-top: 0; padding-bottom: 0; }
+.belive_parent:before{content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 99.5%;
+    background: rgba(0,0,0,0.3);}
+.belive-sec{position:absolute; top: 50%; transform: translateY(-50%); left: 0; width: 100%;}
+.belive-btn{width:230px;}
+.discover-vid{width:100%; height:900px; object-fit: cover;}
+.belive_inner{padding-top:0;}
+
+.misson_inner.belive_inner .intro_heading p{color: #fff;}
+.belive_inner h2{color: #fff;}
+.belive-sec .belive_top .left p{color: #fff;}
+.belive_inner span{background:#fff;}
+
+.tab_parent{position:relative; padding-top: 0; padding-bottom: 0; margin-top:30px;}
+.tab_parent:before{content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 99.5%;
+    background: rgba(0,0,0,0.3);}
+.tab_parent	.tab_details{position:absolute; top: 50%; transform: translateY(-50%); left: 0; width: 100%; margin-top: 0; padding:0; background:transparent; box-shadow: none;}
+.tab-vid{width:100%; height:600px; object-fit: cover;}
+.belive .tab-pane.active .tab_parent .tab_details h3{color: #fff;}
+.tab_parent ul li a{color: #fff; pointer-events:none;}
+.tab_parent ul li a:hover{color: #fff;}
+.our-deep-pedagogical-expertise .innerBx a img{height: auto;}
+.our-deep-pedagogical-expertise .innerBx a{height: auto;}
+
+
+@media (max-width: 1650px){
+ .side-bar .menu ul li.current-menu-item a {
+    font-size: 3rem;
+}	
+}
+
+/*@media (max-width: 1441px){height: auto;
+  .side-bar .menu ul li.current-menu-item::before {
+    width: 150px;
+}	
+}
+
+@media (max-width: 1170px){
+  .side-bar .menu ul li.current-menu-item::before {
+    width: 65px;
+}	
+}*/
+
+
+@media (max-width: 1023px){
+	.details_content_wrap .rightBx img{width: 100%;
+    height: auto;}
+}	
+
+@media (max-width: 991px){
+	.side-bar .menu ul li.current-menu-item::before {
+    width: 110px;
+ }
+	.modal-content iframe{height: 405px !important;}
+}
+@media (max-width: 600px){
+    .side-bar .menu ul li.current-menu-item::before {
+    width: 65px;
+ }
+}
+
+@media (max-width: 480px){
+.side-bar .menu ul li.current-menu-item::before {
+    width: 30px;
+}
+.side-bar .menu ul li.current-menu-item a {
+    font-size: 2.4rem;
+}	
+}
+
